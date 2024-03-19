@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: unset;
+    background-color: #1b1b1c;
+    color: rgb(255, 255, 255);
+    font-family: "Roboto Flex", sans-serif;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  img,
+  picture,
+  svg,
+  canvas {
+    display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+header {
+  background-color: #000;
+}
+nav {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav .search {
+  padding: 6px 6px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #1a1a1a;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #1a1a1a;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c2c2c;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  background-color: #0f0f0f;
+  padding: 20px;
+}
+.title {
+  border-left: 3px solid #dd3333;
+  padding-left: 10px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+.card-anime {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+}
+.card {
+  width: 20%;
+  margin-bottom: 20px;
+  background-color: #0f0f0f;
+}
